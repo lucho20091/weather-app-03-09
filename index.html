@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/183ef109bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="search-form">
+            <input 
+                type="text" 
+                placeholder="Search for cities"
+                aria-label="search cities"
+                class="city-input"
+                id="city-input"> 
+            <button 
+                class="btn-search"
+                aria-label="Search for city"
+            >Search</button>  
+        </form>
+        <div id="city-weather">
+            <p class="weather-icon">☁️</p><!-- weather-icon -->
+            <div class="card"> 
+                <p class="date">today, 12 september</p>
+                <p class="temp">27°</p>
+                <p class="city">Bogota</p>
+                <p class="weather">cloudy</p>
+                <div class="weather-info"><!-- weather-info -->
+                    <i class="fa-solid fa-wind"></i>
+                    <p class="info">wind</p>
+                    <p>20.23 Km/h</p>
+                </div>
+                <div class="weather-info"><!-- weather-info -->
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="info">hum</p>
+                    <p>22%</p>
+                </div>
+            </div>
+            <div id="forecast">
+                <div class="forecast-section"><!-- forecast-section -->
+                    <div class="forecast-card"><!-- forecast-card -->
+                        <p>Sept. 05</p>
+                        <p>12:00</p>
+                        <p>☁️</p>
+                        <p>18°C</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-forecast" id="btn-forecast" onclick="getForecastWeather()">Forecast report</button><!-- btn-forecast -->
+
+
+        </div>
+     
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
